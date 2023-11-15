@@ -1,0 +1,16 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "website:lib"
+
+    - path: "./app/main.hs"
+      component: "website:exe:website"
+
+    - path: "./app/DevelMain.hs"
+      component: "website:exe:website"
+
+    - path: "./app/Paths_website.hs"
+      component: "website:exe:website"
+
+    - path: "./test"
+      component: "website:test:website-test"

@@ -1,0 +1,162 @@
+<header .header-banner>
+    <h1 .moving-text-header>
+        🪤🔮🧫 ~oOo~/|/|\|\~oOo~/|/|\|\~oOo~/|/|\|\~oOo~/|/|\|\~oOo~ 🪤🔮🧫 <br /> ✨🚧🏗️ ▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒ ++ ▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒ ✨🚧🏗️
+        <!-- 🪤🔮🧫 ?!?!? 🪤🔮🧫 <br /> 12/02/23: <a href="rhizome.org" target="_blank">RHIZOME/ONX WORKSHOP - SIGNAL REPRESENTATION THEORY FOR ARTISTS</a> -->
+
+
+<div .container>
+    <div .content>
+        <div .container>
+            <div .column style="flex: 0.8">
+                <h3> ABSTRACT
+
+                <p>
+                    I'm a composer and researcher who studies signal processing, mathematics,
+                    media theory, and the history of technology. Currently I live in Montréal
+                    where I'm a member of the Centre for Interdisciplinary Research in Music
+                    Media and Technology (CIRMMT) and McGill University's Sound Processing and
+                    Control Lab (SPCL). My work there centers around time-frequency analysis,
+                    wavelet scattering, group theory, representation theory, and their
+                    applications to both music composition and computational musicology. During the
+                    summer, I teach a Max/MSP course in Paris at l'Institut de
+                    Recherche et Coordination Acoustique/Musique (IRCAM) on computer music
+                    composition and electronic music history. In Brooklyn---where I was born
+                    and raised---I'm one of the founders of synth manufacturer, community
+                    space, and experimental music venue CuteLab. While I'm currently settled
+                    in Montréal, I often travel between these three places.
+                <p>
+                    Research heavily informs my musical and artistic practice. Most of my
+                    recent work consists of fixed audio/video pieces, but I often play live
+                    too. I also sometimes perform on violin and viola da gamba, collaborating
+                    with other experimental musicians. Previously I ran STAGE, an improvised
+                    music concert series in Brooklyn, located in my former roach-infested
+                    basement that would occasionally flood with septic water. STAGE was active
+                    for two years and named after the late and great Stage Diner on 2nd avenue
+                    in Manhattan (if you know you know).
+
+
+            <div .column>
+                <h3> I. MUSIC
+                <ul>
+                    $forall item <- musicItems 
+                        $case musicLink item
+                            $of Just linkUrl
+                                <li><a href=#{linkUrl} class="music" target="_blank">#{musicName item}</a>
+                            $of Nothing
+                                <li>#{musicName item}
+
+                <br />
+                <h3> II. VIDEO
+                <ul>
+                    $forall item <- videoItems 
+                        $case videoLink item
+                            $of Just linkUrl
+                                <li><a href=#{linkUrl} class="video" target="_blank">#{videoName item}</a>
+                            $of Nothing
+                                <li>#{videoName item}
+
+
+                <br />
+                <h3> III. RESEARCH
+                <ul>
+                    $forall item <- researchItems 
+                        $case researchLink item
+                            $of Just linkUrl
+                                <li><a href=#{linkUrl} class="research" target="_blank">#{researchName item}</a>
+                            $of Nothing
+                                <li>#{researchName item}
+
+                <br />
+                <h3> IV. INSTRUMENTS
+                <ul>
+                    $forall item <- instrumentItems 
+                        $case instrumentLink item
+                            $of Just linkUrl
+                                <li><a href=#{linkUrl} class="instrument" target="_blank">#{instrumentName item}</a>
+                            $of Nothing
+                                <li>#{instrumentName item}
+
+                <br />
+                <h3> V. ARTICLES
+                <ul>
+                    $forall item <- articleItems 
+                        $case articleLink item
+                            $of Just linkUrl
+                                <li><a href=#{linkUrl} class="article" target="_blank">#{articleName item}</a>
+                            $of Nothing
+                                <li>#{articleName item}
+
+                <br />
+                <h3> VI. WORKSHOPS / TEACHING
+                <ul>
+                    $forall item <- workshopItems 
+                        $case workshopLink item
+                            $of Just linkUrl
+                                <li><a  href=#{linkUrl} class="workshop" target="_blank">#{workshopName item}</a>
+                            $of Nothing
+                                <li>#{workshopName item}
+
+            <div .column style="flex: 0.7">
+                <h3> FIG I. - II.
+                <img src=@{StaticR cocotte_jpg} alt="Max avec le sac cocotte">
+                <!-- <img src=@{StaticR cynar_jpg} alt="Max preparing some Cynar"> -->
+                <img src=@{StaticR outremont_jpg} alt="Tite pogner avec les boys">
+
+                <div .ital> 
+                    Fig I-II: (Top) Ak un sac cocotte pi un clope, (Bottom) Tite pogner
+                    ak les boys. Photo credits to Selin Altuntur.
+
+            <div .column style="flex: 0.7">
+                <h3> CONCLUSION
+                <div .ital>
+                    <p>
+                        Remember kids! Techno-anarchist Ted Nelson once said that software
+                        is nothing but cinema---events on a screen that affect the heart
+                        and mind of the viewer, just like a Hollywood film. Perhaps one
+                        day we can make websites like the bolsheviks made films, depicting
+                        the honest realities of everyday life. Until then I'm stuck with this
+                        brutalist website...
+                    <p>
+                        <br />
+                        Designed by me, written in Haskell.
+
+                <br />
+                <h3> APPENDIX A. LINKS 
+                <ul>
+                    <li><div .ital><a href="www.github.com/maxardito" target="_blank">github.com/maxardito</a>
+                    <li><div .ital><a href="mailto:maxwellardito@gmail.com" target="_blank">maxwellardito@gmail.com</a>
+
+                <br />
+                <h3> APPENDIX B. COLLABORATORS, FRIENDS, PEOPLE WHO I LOVE
+                <div .container>
+                    <div .column style="border: none">
+                        <ul>
+                            <li> <a href ="https://rbc.xyz/" class="friend" target="_blank">Buse Çentin</a>
+                            <li> <a href="https://www.dominiccolesmusic.com/" class="lover" target="_blank">Dominic Coles</a>
+                            <li> <a href="https://www.meeshfradkin.com/" class="friend" target="_blank">Meesh Fradkin</a>
+                            <li> <a href="https://www.whimsicalraps.com/" class="lover" target="_blank">Trent Gill</a>
+                            <!-- <li> <a href="" class="friend" target="_blank">Isabelle Galet-Lalande</a> -->
+                            <li> <a href="https://adamholmesmusic.com/about/" class="friend" target="_blank">Adam Holmes</a>
+                            <li> <a href="https://codesdacces.org/stuart-jackson/" class="lover" target="_blank">Stuart Jackson</a>
+                            <li> <a href="https://thekingofgear.com/miniglitch" class="friend" target="_blank">David Karp</a>
+                            <li> <a href="https://www.mkovacevic.com/" class="lover" target="_blank">Marija Kovačević</a>
+                    <div .column style="border: none">
+                        <ul>
+                            <li> <a href="https://javanasse.github.io/" class="lover" target="blank">Julian Vanasse</a>
+                            <li> <a href="https://genius.com/artists/Elif-sansoy" class="friend" target="_blank">Elif Sansoy</a>
+                            <li> <a href="http://shiraishitamio.info/" class="lover" target="_blank">Tamio Shiraishi</a>
+                            <li> <a href="https://hotreleases.bandcamp.com/album/drowned" class="friend" target="blank">Riley S</a>
+                            <li> <a href="https://contemporaryinsights.org/lester-st-louis-2/" class="lover" target="_blank">Lester St. Louis</a>
+                            <li> <a href="https://redthunderaudio.com/" class="friend" target="_blank">Ezra Teboul</a>
+                            <li> <a href="https://github.com/alba-saco/" class="lover" target="_blank">Alba Saco</a>
+                            <li> <a href="https://www.youtube.com/user/dude837" class="friend" target="_blank">Sam Tarakajian</a>
+                            <li> <a href="http://www.wubbelsmusic.com/" class="lover" target="_blank">Eric Wubbels</a>
+
+
+
+
+<footer.footer-banner>
+    <h1 .moving-text-footer>
+        ✨🚧🏗️ ▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒ ++ ▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒ ✨🚧🏗️ <br /> 🪤🔮🧫 ~oOo~/|/|\|\~oOo~/|/|\|\~oOo~/|/|\|\~oOo~/|/|\|\~oOo~ 🪤🔮🧫
+
+

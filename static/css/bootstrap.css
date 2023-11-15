@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+/* Basic typography */
+body {
+    font-family: Times, serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Remove bullet points from ul */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Reduce spacing between list items */
+li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px; /* Adjust the value to control spacing */
+}
+
+.container {
+    column-count: 4; /* Set the number of columns */
+    column-gap: 20px; /* Adjust the gap between columns as needed */
+    overflow: hidden; /* Hide any overflow content */
+    text-align: justify;
+}
+
+.content {
+    /* Optionally, add padding or margin to the content */
+    padding: 20px;
+    /* Optionally, style the content as needed */
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        column-count: 1; /* Switch to a single column layout on smaller screens */
+    }
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Forms */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Responsive Images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
