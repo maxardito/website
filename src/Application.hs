@@ -25,7 +25,7 @@ import Import
 import Language.Haskell.TH.Syntax (qLocation)
 import Network.HTTP.Client.TLS (getGlobalManager)
 import Network.Wai (Middleware)
--- import Network.Wai.Middleware.ForceSSL
+import Network.Wai.Middleware.ForceSSL
 import Network.Wai.Handler.Warp
   ( Settings
   , defaultSettings
@@ -82,8 +82,8 @@ makeApplication foundation = do
   logWare <- makeLogWare foundation
     -- Create the WAI application and apply middlewares
   appPlain <- toWaiAppPlain foundation
-  return $ logWare $ defaultMiddlewaresNoLogging appPlain
-  -- return $ forceSSL $ logWare $ defaultMiddlewaresNoLogging appPlain
+  -- return $ logWare $ defaultMiddlewaresNoLogging appPlain
+  return $ forceSSL $ logWare $ defaultMiddlewaresNoLogging appPlain
 
 makeLogWare :: App -> IO Middleware
 makeLogWare foundation =

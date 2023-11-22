@@ -45,6 +45,7 @@ getHomeR = do
 
         let researchItems = [ResearchItem "A Typomorphological Approach To The Timbre Transfer" Nothing, 
                              ResearchItem "Modeling the RCA Mark II Tone Generator and Oscillator Units" (Just "https://www.cirmmt.org/en/funding/ice-recipient-reports/ardito2023-24-1"),
+                             ResearchItem "Evaluating and Preparing Object-Contact Models For User Interaction" (Just "http://www.music.mcgill.ca/~gary/courses/projects/618_2022/ArditoReport.pdf"),
                              ResearchItem "Reconstructing The Vibraphone Version of ...explosante fixe... by Pierre Boulez" Nothing]
 
         let instrumentItems = [InstrumentItem "Messed Up" (Just "https://shop.cutelab.nyc/eurorack/messed-up/"), 
@@ -52,7 +53,7 @@ getHomeR = do
 
         let articleItems = [ArticleItem "Using Latent Timbral Space to Communicate with The Dead" (Just "https://archive.wetink.org/archive-06/using-latent-timbral-space-to-communicate-with-the-dead")]
                              
-        let workshopItems = [WorkshopItem "Signal Representation Theory for Artists [Rhizome / ONX]" Nothing, 
+        let workshopItems = [WorkshopItem "Signal Representation Theory for Artists [Rhizome / ONX]" (Just "https://rhizome.org/events/signal-representation-theory-workshop/"), 
                              WorkshopItem "Music and The Internet [CuteLab]" Nothing,
                              WorkshopItem "Contemporary Music Creation and Critique [IRCAM]" Nothing]
         aDomId <- newIdent
