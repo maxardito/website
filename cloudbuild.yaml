@@ -10,7 +10,7 @@ steps:
     args:
       - "-c"
       - |
-        gcloud compute ssh $_VM_NAME \
+        gcloud compute ssh $_USER@$_VM_NAME \
         --project=$_PROJECT_NAME \
         --zone=$_ZONE \
         --command="docker pull us.gcr.io/$_PROJECT_NAME/$_CONTAINER_NAME:latest \
