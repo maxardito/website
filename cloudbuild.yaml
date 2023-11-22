@@ -13,8 +13,9 @@ steps:
         gcloud compute ssh $_USER@$_VM_NAME \
         --project=$_PROJECT_NAME \
         --zone=$_ZONE \
-        --command="docker stop us.gcr.io/$_PROJECT_NAME/$_CONTAINER_NAME \
-                    && docker rm us.gcr.io/$_PROJECT_NAME/$_CONTAINER_NAME \
+        --command="docker stop $(docker ps -q) \
+                    && docker rm $(docker ps -a -q) \
+                    && docker rmi $(docker images -q) \
                     && docker pull us.gcr.io/$_PROJECT_NAME/$_CONTAINER_NAME:latest \
                     && docker run -d -p 3000:3000 us.gcr.io/$_PROJECT_NAME/$_CONTAINER_NAME:latest"
 
