@@ -1,7 +1,7 @@
 .header-banner {
     background-color: #fff;
     color: #000;
-    padding: 28px;
+    padding: 48px;
     text-align: center;
     font-size: 18px;
     overflow: hidden;
@@ -12,7 +12,7 @@
 .footer-banner {
     background-color: #fff;
     color: #000;
-    padding: 28px;
+    padding: 48px;
     text-align: center;
     font-size: 18px;
     overflow: hidden;

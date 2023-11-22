@@ -1,0 +1,22 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      ["build", "-t", "us.gcr.io/$_PROJECT_NAME/$_CONTAINER_NAME:latest", "."]
+
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "us.gcr.io/$_PROJECT_NAME/$_CONTAINER_NAME:latest"]
+
+  - name: "gcr.io/cloud-builders/gcloud"
+    entrypoint: "bash"
+    args:
+      - "-c"
+      - |
+        gcloud compute ssh $_VM_NAME \
+        --project=$_PROJECT_NAME \
+        --command="docker pull us.gcr.io/$_PROJECT_NAME/$_CONTAINER_NAME:latest \
+                    && docker stop $_CONTAINER_NAME \
+                    && docker rm $_CONTAINER_NAME \
+                    && docker run -d -p 3000:3000 us.gcr.io/$_PROJECT_NAME/$_CONTAINER_NAME:latest"
+
+images:
+  - "us.gcr.io/$_PROJECT_NAME/$_CONTAINER_NAME:latest"

@@ -103,8 +103,8 @@
                 <img src=@{StaticR outremont_jpg} alt="Tite pogner avec les boys">
 
                 <div .ital> 
-                    Fig I-II: (Top) Ak un sac cocotte pi un clope, (Bottom) Tite pogner
-                    ak les boys. Photo credits to Selin Altuntur.
+                    Fig I-II: (Top) Un sac cocotte pi une clope, (Bottom) Tite pogner
+                    avec les boys. Photo credits to Selin Altuntur.
 
             <div .column style="flex: 0.7">
                 <h3> CONCLUSION
@@ -123,7 +123,7 @@
                 <br />
                 <h3> APPENDIX A. LINKS 
                 <ul>
-                    <li><div .ital><a href="www.github.com/maxardito" target="_blank">github.com/maxardito</a>
+                    <li><div .ital><a href="https://github.com/maxardito" target="_blank">github.com/maxardito</a>
                     <li><div .ital><a href="mailto:maxwellardito@gmail.com" target="_blank">maxwellardito@gmail.com</a>
 
                 <br />
