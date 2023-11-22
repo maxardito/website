@@ -91,6 +91,10 @@ img {
     height: auto;
 }
 
+a {
+    color: #0000EE;
+}
+
 a:visited {
     color: inherit; 
 }
