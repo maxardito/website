@@ -96,7 +96,7 @@ a {
 }
 
 a:visited {
-    color: inherit; 
+    color: #0000EE; 
 }
 
 a.workshop {
