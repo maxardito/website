@@ -50,17 +50,51 @@
     }
 }
 
+/* Default styles for larger screens */
 .container {
   display: flex;
   font-size: 18px;
-  justify-content: space-between; /* Distribute columns evenly */
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .column {
-  flex: 1; /* Each column takes an equal share of the available space */
-  border: 1px solid #ccc; /* Add a border for visibility */
+  flex: 1 0 10%;
+  flex-basis: 10%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  text-align: center;
   padding: 10px;
 }
+
+.columnFriends {
+  flex: 1 0 100%;
+  flex-basis: 20%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+}
+
+.column img {
+  max-width: 75%; /* Ensure images do not exceed the width of their container */
+  height: auto; /* Maintain the aspect ratio of the images */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .column {
+    flex-basis: 100%; /* Each column takes 100% of the container width */
+    text-align: center;
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .column img {
+    max-width: 45%; /* Ensure images do not exceed the width of their container */
+  }
+}
+
 
 .ital{
     font-style: italic;

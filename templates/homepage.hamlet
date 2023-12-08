@@ -7,7 +7,7 @@
 <div .container>
     <div .content>
         <div .container>
-            <div .column style="flex: 0.8">
+            <div .column>
                 <h3> ABSTRACT
 
                 <p>
@@ -96,7 +96,7 @@
                             $of Nothing
                                 <li>#{workshopName item}
 
-            <div .column style="flex: 0.7">
+            <div .column>
                 <h3> FIG I. - II.
                 <img src=@{StaticR cocotte_jpg} alt="Max avec le sac cocotte">
                 <!-- <img src=@{StaticR cynar_jpg} alt="Max preparing some Cynar"> -->
@@ -106,7 +106,7 @@
                     Fig I-II: (Top) Un sac cocotte pi une clope, (Bottom) Tite pogner
                     avec les boys. Photo credits to Selin Altuntur.
 
-            <div .column style="flex: 0.7">
+            <div .column>
                 <h3> CONCLUSION
                 <div .ital>
                     <p>
@@ -121,7 +121,7 @@
                         Designed by me, written in Haskell.
 
                 <br />
-                <h3> APPENDIX A. LINKS 
+                <h3> APPENDIX A. LINKS
                 <ul>
                     <li><div .ital><a href="https://github.com/maxardito" target="_blank">github.com/maxardito</a>
                     <li><div .ital><a href="mailto:maxwellardito@gmail.com" target="_blank">maxwellardito@gmail.com</a>
@@ -129,7 +129,7 @@
                 <br />
                 <h3> APPENDIX B. COLLABORATORS, FRIENDS, PEOPLE WHO I LOVE
                 <div .container>
-                    <div .column style="border: none">
+                    <div .columnFriends style="border: none">
                         <ul>
                             <li> <a href ="https://rbc.xyz/" class="friend" target="_blank">Buse Çentin</a>
                             <li> <a href="https://www.dominiccolesmusic.com/" class="lover" target="_blank">Dominic Coles</a>
@@ -140,7 +140,7 @@
                             <li> <a href="https://codesdacces.org/stuart-jackson/" class="lover" target="_blank">Stuart Jackson</a>
                             <li> <a href="https://thekingofgear.com/miniglitch" class="friend" target="_blank">David Karp</a>
                             <li> <a href="https://www.mkovacevic.com/" class="lover" target="_blank">Marija Kovačević</a>
-                    <div .column style="border: none">
+                    <div .columnFriends style="border: none">
                         <ul>
                             <li> <a href="https://javanasse.github.io/" class="lover" target="blank">Julian Vanasse</a>
                             <li> <a href="https://genius.com/artists/Elif-sansoy" class="friend" target="_blank">Elif Sansoy</a>
