@@ -98,13 +98,14 @@
 
             <div .column>
                 <h3> FIG I. - II.
-                <img src=@{StaticR cocotte_jpg} alt="Max avec le sac cocotte">
                 <!-- <img src=@{StaticR cynar_jpg} alt="Max preparing some Cynar"> -->
-                <img src=@{StaticR outremont_jpg} alt="Tite pogner avec les boys">
+                <img src=@{StaticR bonweekend_jpeg} alt="Tite pogner avec les boys">
+                <img src=@{StaticR clope_jpeg} alt="Max avec une clope">
 
                 <div .ital> 
-                    Fig I-II: (Top) Un sac cocotte pi une clope, (Bottom) Tite pogner
-                    avec les boys. Photo credits to Selin Altuntur.
+                    Fig I-II: (Top) Premiere tite terrasse yezzir! N'est bin tite frette
+                    ti buzz relaxe bon weekend gang, (Bottom) Un ti-peu d'gelée pi une
+                    clope.
 
             <div .column>
                 <h3> CONCLUSION
@@ -133,13 +134,15 @@
                         <ul>
                             <li> <a href ="https://rbc.xyz/" class="friend" target="_blank">Buse Çentin</a>
                             <li> <a href="https://www.dominiccolesmusic.com/" class="lover" target="_blank">Dominic Coles</a>
-                            <li> <a href="https://www.meeshfradkin.com/" class="friend" target="_blank">Meesh Fradkin</a>
+                            <li> <a href="https://www.meeshfradkin.com/" class="friend" target="_blank">Meesh Sara Fradkin</a>
                             <li> <a href="https://www.whimsicalraps.com/" class="lover" target="_blank">Trent Gill</a>
                             <!-- <li> <a href="" class="friend" target="_blank">Isabelle Galet-Lalande</a> -->
                             <li> <a href="https://adamholmesmusic.com/about/" class="friend" target="_blank">Adam Holmes</a>
                             <li> <a href="https://codesdacces.org/stuart-jackson/" class="lover" target="_blank">Stuart Jackson</a>
                             <li> <a href="https://thekingofgear.com/miniglitch" class="friend" target="_blank">David Karp</a>
                             <li> <a href="https://www.mkovacevic.com/" class="lover" target="_blank">Marija Kovačević</a>
+                            <li> <a href="https://maxardito.com/static/melvis-dentist" class="friend" target="_blank">Hannah Blair</a>
+                            <li> <a href="https://www.concordia.ca/finearts/art-volt/residencies/past/romany-eveleigh-residency/romany-eveleigh-residents/hannah-furgeson.html" class="lover" target="_blank">Hannah Ferguson</a>
                     <div .columnFriends style="border: none">
                         <ul>
                             <li> <a href="https://javanasse.github.io/" class="lover" target="blank">Julian Vanasse</a>

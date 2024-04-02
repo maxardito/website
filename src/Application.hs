@@ -82,6 +82,7 @@ makeApplication foundation = do
   logWare <- makeLogWare foundation
     -- Create the WAI application and apply middlewares
   appPlain <- toWaiAppPlain foundation
+  -- NOTE: Uncomment this for development
   -- return $ logWare $ defaultMiddlewaresNoLogging appPlain
   return $ forceSSL $ logWare $ defaultMiddlewaresNoLogging appPlain
 

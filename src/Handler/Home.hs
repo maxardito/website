@@ -51,7 +51,8 @@ getHomeR = do
         let instrumentItems = [InstrumentItem "Messed Up" (Just "https://shop.cutelab.nyc/eurorack/messed-up/"), 
                                InstrumentItem "Missed Opportunities" (Just "https://shop.cutelab.nyc/eurorack/missed-opportunities/")]
 
-        let articleItems = [ArticleItem "Using Latent Timbral Space to Communicate with The Dead" (Just "https://archive.wetink.org/archive-06/using-latent-timbral-space-to-communicate-with-the-dead")]
+        let articleItems = [ArticleItem "Using Latent Timbral Space to Communicate with The Dead" (Just "https://archive.wetink.org/archive-06/using-latent-timbral-space-to-communicate-with-the-dead"), 
+                            ArticleItem "On The Fermentation of Digital Media" (Just "https://unthinking.photography")]
                              
         let workshopItems = [WorkshopItem "Signal Representation Theory for Artists [Rhizome / ONX]" (Just "https://rhizome.org/events/signal-representation-theory-workshop/"), 
                              WorkshopItem "Music and The Internet [CuteLab]" Nothing,
