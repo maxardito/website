@@ -31,11 +31,10 @@ getImageR imagePaths = do
 getHomeR :: Handler Html
 getHomeR = do
     defaultLayout $ do
-        let musicItems = [MusicItem {musicName = "Improvisations", musicLink = Nothing}, 
-                          MusicItem {musicName = "Sinthomatic Music I. - V.", musicLink = Nothing}, 
-                          MusicItem {musicName = "Learning What To Do With Your Sinthome Instead of Enjoing It", musicLink = Just "https://dreamingbeyond.ai/en/f/pluriverse/future-present-visions-new-vibrations/sinthomatic-music-digital-intimacy"}]
+        let musicItems = [MusicItem {musicName = "Sinthomatic Music I. - III.", musicLink = Nothing}] 
+                          -- MusicItem {musicName = "Learning What To Do With Your Sinthome Instead of Enjoing It", musicLink = Just "https://dreamingbeyond.ai/en/f/pluriverse/future-present-visions-new-vibrations/sinthomatic-music-digital-intimacy"}]
 
-        let videoItems = [VideoItem "Advertisement Reel" Nothing]
+        let videoItems = [VideoItem "Max Ardito - Live At Roulette" Nothing]
                           -- VideoItem "MAX ARDITO - LIVE AT ROULETTE" Nothing, 
                           -- VideoItem "MAX ARDITO - LIVE AT ISSUE PROJECT ROOM" Nothing,
                           -- VideoItem "MAX ARDITO - LIVE AT PIONEER WORKS" Nothing, 
@@ -52,7 +51,7 @@ getHomeR = do
                                InstrumentItem "Missed Opportunities" (Just "https://shop.cutelab.nyc/eurorack/missed-opportunities/")]
 
         let articleItems = [ArticleItem "Using Latent Timbral Space to Communicate with The Dead" (Just "https://archive.wetink.org/archive-06/using-latent-timbral-space-to-communicate-with-the-dead"), 
-                            ArticleItem "On The Fermentation of Digital Media" (Just "https://unthinking.photography")]
+                            ArticleItem "On The Fermentation of Digital Media" (Just "https://unthinking.photography/articles/fermentation-of-digital-media")]
                              
         let workshopItems = [WorkshopItem "Signal Representation Theory for Artists [Rhizome / ONX]" (Just "https://rhizome.org/events/signal-representation-theory-workshop/"), 
                              WorkshopItem "Music and The Internet [CuteLab]" Nothing,

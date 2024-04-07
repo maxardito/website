@@ -53,7 +53,7 @@
 /* Default styles for larger screens */
 .container {
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   justify-content: space-between;
   flex-wrap: wrap;
 }

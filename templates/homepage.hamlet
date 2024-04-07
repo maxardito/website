@@ -99,8 +99,8 @@
             <div .column>
                 <h3> FIG I. - II.
                 <!-- <img src=@{StaticR cynar_jpg} alt="Max preparing some Cynar"> -->
-                <img src=@{StaticR bonweekend_jpeg} alt="Tite pogner avec les boys">
-                <img src=@{StaticR clope_jpeg} alt="Max avec une clope">
+                <img src=@{StaticR bonweekend_jpg} alt="Tite pogner avec les boys">
+                <img src=@{StaticR clope_jpg} alt="Max avec une clope">
 
                 <div .ital> 
                     Fig I-II: (Top) Premiere tite terrasse yezzir! N'est bin tite frette
@@ -141,8 +141,7 @@
                             <li> <a href="https://codesdacces.org/stuart-jackson/" class="lover" target="_blank">Stuart Jackson</a>
                             <li> <a href="https://thekingofgear.com/miniglitch" class="friend" target="_blank">David Karp</a>
                             <li> <a href="https://www.mkovacevic.com/" class="lover" target="_blank">Marija Kovačević</a>
-                            <li> <a href="https://maxardito.com/static/melvis-dentist" class="friend" target="_blank">Hannah Blair</a>
-                            <li> <a href="https://www.concordia.ca/finearts/art-volt/residencies/past/romany-eveleigh-residency/romany-eveleigh-residents/hannah-furgeson.html" class="lover" target="_blank">Hannah Ferguson</a>
+                            <li> <a href="https://maxardito.com/static/melvis-dentist.jpg" class="friend" target="_blank">Hannah Blair</a>
                     <div .columnFriends style="border: none">
                         <ul>
                             <li> <a href="https://javanasse.github.io/" class="lover" target="blank">Julian Vanasse</a>
@@ -154,6 +153,7 @@
                             <li> <a href="https://github.com/alba-saco/" class="lover" target="_blank">Alba Saco</a>
                             <li> <a href="https://www.youtube.com/user/dude837" class="friend" target="_blank">Sam Tarakajian</a>
                             <li> <a href="http://www.wubbelsmusic.com/" class="lover" target="_blank">Eric Wubbels</a>
+                            <li> <a href="https://www.concordia.ca/finearts/art-volt/residencies/past/romany-eveleigh-residency/romany-eveleigh-residents/hannah-furgeson.html" class="friend" target="_blank">Hannah Ferguson</a>
 
 
 
