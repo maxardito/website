@@ -31,8 +31,8 @@ getImageR imagePaths = do
 getHomeR :: Handler Html
 getHomeR = do
     defaultLayout $ do
-        let musicItems = [MusicItem {musicName = "Sinthomatic Music I. - III.", musicLink = Nothing}] 
-                          -- MusicItem {musicName = "Learning What To Do With Your Sinthome Instead of Enjoing It", musicLink = Just "https://dreamingbeyond.ai/en/f/pluriverse/future-present-visions-new-vibrations/sinthomatic-music-digital-intimacy"}]
+        let musicItems = [MusicItem {musicName = "Sinthomatic Music I. - III.", musicLink = Nothing},
+                          MusicItem {musicName = "Learning What To Do With Your Sinthome Instead of Enjoing It", musicLink = Just "https://dreamingbeyond.ai/en/f/pluriverse/future-present-visions-new-vibrations/sinthomatic-music-digital-intimacy"}]
 
         let videoItems = [VideoItem "Max Ardito - Live At Roulette" Nothing]
                           -- VideoItem "MAX ARDITO - LIVE AT ROULETTE" Nothing, 
