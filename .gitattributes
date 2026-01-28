@@ -1,2 +1,7 @@
+# Force Haskell for all Haskell files
 *.hs linguist-language=Haskell
+*.lhs linguist-language=Haskell
+
+# Ignore HTML files for language stats
+*.html linguist-vendored
 
