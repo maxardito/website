@@ -4,4 +4,6 @@
 
 # Ignore HTML files for language stats
 *.html linguist-vendored
+*.css linguist-vendored
+*.md linguist-vendored
 
