@@ -1,0 +1,44 @@
+# Hakyll
+_site/
+_cache/
+.hakyll-cache/
+
+# Cabal
+dist/
+dist-newstyle/
+*.cabal.user
+
+# Stack
+.stack-work/
+
+# GHC
+*.hi
+*.o
+*.dyn_o
+*.dyn_hi
+*.prof
+*.aux
+*.hp
+*.eventlog
+
+# Executables
+site
+site.exe
+
+# Nix
+flake.lock
+
+# Logs
+*.log
+
+# Fonts
+fonts/
+
+# Editor / OS junk
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
