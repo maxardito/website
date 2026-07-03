@@ -2,14 +2,14 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import Data.Monoid (mappend)
+import Data.Time.Format (defaultTimeLocale, formatTime)
 import Hakyll
 import Text.Pandoc.Options
-import Data.Time.Format (defaultTimeLocale, formatTime)
 
 --------------------------------------------------------------------------------
 isLinkPost :: Metadata -> Bool
 isLinkPost meta = case lookupString "external-url" meta of
-    Just _  -> True
+    Just _ -> True
     Nothing -> False
 
 postUrlField :: Context String
@@ -17,19 +17,23 @@ postUrlField = field "postUrl" $ \item -> do
     meta <- getMetadata (itemIdentifier item)
     case lookupString "external-url" meta of
         Just url -> return url
-        Nothing  -> getRoute (itemIdentifier item) >>= maybe (fail "No route") return
+        Nothing -> getRoute (itemIdentifier item) >>= maybe (fail "No route") return
 
 displayDateField :: Context String
 displayDateField = field "displayDate" $ \item -> do
     meta <- getMetadata (itemIdentifier item)
     case lookupString "display-date" meta of
-        Just d  -> return d
+        Just d -> return d
         Nothing -> do
             time <- getItemUTC defaultTimeLocale (itemIdentifier item)
             return $ formatTime defaultTimeLocale "%B %e, %Y" time
 
 main :: IO ()
 main = hakyll $ do
+    match (fromList ["CNAME", ".nojekyll"]) $ do
+        route idRoute
+        compile copyFileCompiler
+
     match "images/*" $ do
         route idRoute
         compile copyFileCompiler
@@ -94,6 +98,6 @@ postCtx :: Context String
 postCtx =
     postUrlField
         `mappend` displayDateField
-        `mappend` dateField "date" "%Y-%m-%d"   -- still required for sorting
+        `mappend` dateField "date" "%Y-%m-%d" -- still required for sorting
         `mappend` metadataField
         `mappend` defaultContext
